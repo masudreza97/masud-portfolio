@@ -24,12 +24,13 @@ export const HeroSection = () => {
           </h1>
 
           <h2 className="text-2xl md:text-3xl text-muted-foreground mb-6 animate-fade-in">
-            Senior Fullstack Developer
+            Senior Fullstack Engineer
           </h2>
 
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8 animate-fade-in">
-            5+ years building scalable web & mobile applications with Node.js, React, Next.js, and TypeScript. 
-            Passionate about clean architecture, performance optimization, and delivering exceptional user experiences.
+            5+ years specializing in building backend systems with Node.js, SQL/NoSQL, and AWS. I turn ideas into fully functional products, delivering projects end-to-end with a problem-solving mindset. Fast learner, reliable, and focused on building high-performance, scalable solutions, while removing technical barriers for teams and stakeholders.
+
+            I’ve applied my skills across multiple domains, including <span className="text-primary">Fintech</span>, <span className="text-primary">Video-Commerce</span>, <span className="text-primary">E-Commerce</span> & <span className="text-primary">Gaming</span>, bringing domain knowledge and technical expertise to every project.
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-4 mb-10 animate-fade-in">
@@ -78,7 +79,7 @@ export const HeroSection = () => {
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
+      <div className="md:flex hidden absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
         <div className="w-6 h-10 rounded-full border-2 border-primary/50 flex justify-center pt-2">
           <div className="w-1.5 h-3 bg-primary rounded-full animate-pulse" />
         </div>

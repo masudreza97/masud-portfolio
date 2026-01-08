@@ -12,25 +12,25 @@ interface SkillCategory {
 
 const skillCategories: SkillCategory[] = [
   {
-    title: "Frontend",
-    skills: [
-      { name: "React.js", level: 95 },
-      { name: "Next.js", level: 90 },
-      { name: "TypeScript", level: 90 },
-      { name: "Angular", level: 80 },
-      { name: "Tailwind CSS", level: 95 },
-      { name: "Redux", level: 85 },
-    ],
-  },
-  {
     title: "Backend & API",
     skills: [
       { name: "Node.js", level: 95 },
-      { name: "Express.js", level: 95 },
-      { name: "RESTful APIs", level: 95 },
+      { name: "Express.js", level: 98 },
+      { name: "RESTful APIs", level: 99 },
       { name: "JWT Auth", level: 90 },
       { name: "WebSockets", level: 85 },
       { name: "RabbitMQ", level: 75 },
+    ],
+  },
+  {
+    title: "Frontend",
+    skills: [
+      { name: "React.js", level: 95 },
+      { name: "Next.js", level: 80 },
+      { name: "TypeScript", level: 80 },
+      { name: "Angular", level: 50 },
+      { name: "Tailwind CSS", level: 95 },
+      { name: "Redux", level: 90 },
     ],
   },
   {
@@ -38,6 +38,7 @@ const skillCategories: SkillCategory[] = [
     skills: [
       { name: "MongoDB", level: 90 },
       { name: "MySQL", level: 85 },
+      { name: "PostgreSQL", level: 70 },
       { name: "Elasticsearch", level: 85 },
       { name: "DynamoDB", level: 75 },
       { name: "Schema Design", level: 90 },
@@ -47,7 +48,7 @@ const skillCategories: SkillCategory[] = [
     title: "Cloud & DevOps",
     skills: [
       { name: "AWS Lambda", level: 85 },
-      { name: "AWS EC2/S3", level: 85 },
+      { name: "AWS EC2/S3", level: 90 },
       { name: "Docker", level: 80 },
       { name: "CI/CD", level: 85 },
       { name: "Git/GitLab", level: 95 },

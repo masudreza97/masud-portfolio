@@ -8,10 +8,10 @@ const stats = [
 ];
 
 const highlights = [
-  { icon: Code2, label: "Frontend Expert", desc: "React, Next.js, Angular" },
-  { icon: Server, label: "Backend Master", desc: "Node.js, Express, APIs" },
-  { icon: Database, label: "Data Architect", desc: "MongoDB, MySQL, ES" },
-  { icon: Cloud, label: "Cloud Native", desc: "AWS, Docker, CI/CD" },
+  { icon: Server, label: "Backend Expert", desc: "Node.js, Express.js, Typescript, Rest APIs, Microservices" },
+  { icon: Code2, label: "Frontend Master", desc: "React, Next.js, Tailwind, Angular" },
+  { icon: Database, label: "Data Architect", desc: "MongoDB, MySQL, Elastic Search, DynamoDB" },
+  { icon: Cloud, label: "Cloud Native", desc: "AWS, Docker, CI/CD, Jenkins, Teamcity, Git, Bash" },
 ];
 
 export const AboutSection = () => {
@@ -28,15 +28,12 @@ export const AboutSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <p className="text-lg text-muted-foreground leading-relaxed">
-              I'm a <span className="text-primary font-semibold">Senior Full Stack Developer</span> with 
-              over 5 years of hands-on experience building scalable, maintainable web and mobile applications.
+              I'm a <span className="text-primary font-semibold">Senior Full Stack Engineer</span> with over 5 years of hands-on experience, specializing in building scalable applications. I have always been hardworking, and it's my firm belief that hard work and consistency have enabled me to come this far while continuing to impress people with my work. I have been a fast learner since my early school days, and over the years, I’ve consistently stepped out of my comfort zone to bring clarity in solving a problem. I’m known for solving problems and delivering solutions that make a real impact at the end of the day.
             </p>
-            <p className="text-muted-foreground leading-relaxed">
-              My expertise spans the entire stack — from crafting responsive, pixel-perfect frontends with 
-              React.js and Next.js to architecting robust backend services with Node.js and Express.js. 
-              I'm passionate about clean code, performance optimization, and delivering exceptional user experiences.
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              I believe tools and frameworks are just that - tools. The fundamentals are what matter most, and over the years, I have developed the skills to learn and apply them efficiently.
             </p>
-            <p className="text-muted-foreground leading-relaxed">
+            <p className="text-lg text-muted-foreground leading-relaxed">
               I hold a <span className="text-primary font-semibold">UAE Golden Visa</span> under the 
               Distinguished Student category, reflecting my academic excellence and professional achievements.
             </p>

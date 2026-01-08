@@ -12,22 +12,22 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: "MyStreet",
-    description:
-      "A mobile-first social e-commerce web application featuring real-time cart updates via WebSockets, dynamic pricing, and seamless checkout workflows. Built with a focus on performance and cross-browser compatibility.",
-    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=400&fit=crop",
-    technologies: ["Next.js", "Redux", "Tailwind CSS", "WebSockets", "RabbitMQ"],
-    liveUrl: "https://customer.qa.mystreet.io/",
-    role: "Frontend Developer",
-  },
-  {
-    title: "OneDash",
+    title: "One Dash",
     description:
       "High-performance data platform with scalable backend services, Elasticsearch integration, and role-based admin panel. Integrated with major e-commerce platforms including Shopify, BigCommerce, and WooCommerce.",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=400&fit=crop",
+    image: "https://res.cloudinary.com/dnbr24n7i/image/upload/v1767871136/onedash_zpquus.png",
     technologies: ["Node.js", "Elasticsearch", "AWS Lambda", "JWT", "Shopify API"],
     liveUrl: "https://onedash.com",
     role: "Development Lead",
+  },
+  {
+    title: "MyStreet",
+    description:
+      "A mobile-first social e-commerce web application featuring real-time cart updates via WebSockets, dynamic pricing, and seamless checkout workflows. Built with a focus on performance and cross-browser compatibility.",
+    image: "https://res.cloudinary.com/dnbr24n7i/image/upload/v1767871364/mystreet_ko3ykt.png",
+    technologies: ["Next.js", "Redux", "Tailwind CSS", "WebSockets", "RabbitMQ"],
+    liveUrl: "https://customer.qa.mystreet.io/",
+    role: "Frontend Developer",
   },
   {
     title: "KT Gamez",
@@ -42,7 +42,7 @@ const projects: Project[] = [
     title: "Giro Wallet",
     description:
       "Digital wallet system rebuilt from scratch with mobile-first responsive design. Achieved CERT-In penetration testing certification after identifying and fixing critical security vulnerabilities.",
-    image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&h=400&fit=crop",
+    image: "https://res.cloudinary.com/dnbr24n7i/image/upload/v1767871464/girowallet_qcmqbx.png",
     technologies: ["Ionic", "Angular", "Bootstrap", "JavaScript", "Security"],
     role: "Fullstack Engineer",
   },

@@ -1,5 +1,6 @@
 import { Briefcase, Calendar, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import parse from "html-react-parser";
 
 interface Experience {
   title: string;
@@ -13,31 +14,31 @@ interface Experience {
 
 const experiences: Experience[] = [
   {
-    title: "Software Engineer",
-    company: "National Dynamics DWC - LLC",
-    period: "Nov 2023 – Present",
-    link: "https://customer.qa.mystreet.io/",
-    highlights: [
-      "Developed a mobile-first, fully responsive social e-commerce web application using Next.js, Redux, and Tailwind CSS",
-      "Architected and implemented a real-time cart system using WebSockets for live pricing updates and inventory sync",
-      "Designed a dynamic email notification system using MJML for onboarding, password recovery, and transactional emails",
-      "Implemented RabbitMQ-based async processing for product reviews to prevent concurrency conflicts",
-    ],
-    technologies: ["Next.js", "React", "Redux", "Tailwind CSS", "WebSockets", "MJML", "RabbitMQ"],
-  },
-  {
-    title: "Fullstack Engineer (Development Lead)",
+    title: "Full Stack Engineer (Development Lead)",
     company: "OneDash (Part of National Dynamics DWC)",
     period: "Jan 2022 – Present",
     link: "https://onedash.com",
     highlights: [
-      "Designed and implemented scalable backend services using Node.js and Elasticsearch for high-performance data retrieval",
-      "Built a secure role-based admin panel reducing manual database operations by 50%+",
-      "Implemented JWT-based authentication and authorization for API security",
-      "Integrated with Shopify, BigCommerce, and WooCommerce using webhook-based communication",
-      "Maintained CI/CD pipelines using TeamCity, improving deployment consistency",
+      `<span className="text-primary font-semibold">Designed and implemented scalable backend services</span> using Node.js and Elasticsearch, enabling high-performance data retrieval for large datasets.`,
+      `<span className="text-primary font-semibold">Built a secure role-based admin panel,</span> reducing manual database operations by over <span className="text-primary font-semibold">50%</span> and improving operational efficiency.`,
+      `Implemented JWT-based authentication and authorization, ensuring robust API security and controlled access.`,
+      `<span className="text-primary font-semibold">Integrated Shopify, BigCommerce, WooCommerce, and Stripe via webhooks,</span> enabling real-time data synchronization and payment processing across platforms.`,
+      `<span className="text-primary font-semibold">Maintained CI/CD pipelines with TeamCity,</span> improving deployment consistency, speed, and reliability.`,
     ],
-    technologies: ["Node.js", "Elasticsearch", "AWS Lambda", "JWT", "Shopify API", "TeamCity"],
+    technologies: ["Node.js", "React.js", "Elasticsearch", "MySQL", "AWS Lambda", "AWS EC2", "AWS SQS", "TeamCity"],
+  },
+  {
+    title: "Full Stack Engineer",
+    company: "MyStreet App Ltd (National Dynamics DWC - LLC)",
+    period: "Nov 2023 – Present",
+    link: "https://customer.qa.mystreet.io/",
+    highlights: [
+      `<span className="text-primary font-semibold">Developed a mobile-first, fully responsive social e-commerce web application,</span> delivering a seamless user experience and driving higher engagement.`,
+      `<span className="text-primary font-semibold">Architected and implemented a real-time cart system using WebSockets,</span> enabling live pricing updates, inventory sync, and improved customer satisfaction.`,
+      `<span className="text-primary font-semibold">Designed and implemented backend analytics for promo code usage,</span> including database schema design and reporting workflows, enabling data-driven decisions, improving marketing effectiveness, and ensuring scalable data management.`,
+      `<span className="text-primary font-semibold">Integrated analytics APIs and Google Vertex AI to power moodboards and visual search features,</span> enhancing user personalization and search accuracy.`,
+    ],
+    technologies: ["Node.js", "MongoDB", "Next.js", "React", "Redux", "Tailwind CSS", "WebSockets", "MJML", "RabbitMQ"],
   },
   {
     title: "Fullstack Engineer",
@@ -45,10 +46,10 @@ const experiences: Experience[] = [
     period: "June 2020 – Oct 2023",
     link: "https://ktgamez.com",
     highlights: [
-      "Led backend infrastructure and development team to launch a hyper-casual gaming platform with Khaleej Times",
-      "Rebuilt Giro Wallet mobile and web application from scratch using Ionic, Angular, and Bootstrap",
-      "Identified and remediated critical security vulnerabilities, achieving CERT-In penetration testing certification",
-      "Led integration efforts with telecom providers (Ooredoo Kuwait, Dialog) for mobile subscription management",
+      `Led backend infrastructure and development team to launch a hyper-casual gaming platform with Khaleej Times`,
+      `Rebuilt Giro Wallet mobile and web application from scratch using Ionic, Angular, and Bootstrap`,
+      `Identified and remediated critical security vulnerabilities, achieving CERT-In penetration testing certification`,
+      `Led integration efforts with telecom providers (Ooredoo Kuwait, Dialog) for mobile subscription management`,
     ],
     technologies: ["Ionic", "Angular", "Node.js", "Bootstrap", "JavaScript", "REST APIs"],
   },
@@ -101,7 +102,7 @@ export const ExperienceSection = () => {
                     <ul className={`space-y-2 mb-4 ${index % 2 === 0 ? "md:text-right" : ""}`}>
                       {exp.highlights.map((highlight, i) => (
                         <li key={i} className="text-sm text-muted-foreground">
-                          • {highlight}
+                          • {parse(highlight)}
                         </li>
                       ))}
                     </ul>

@@ -46,7 +46,7 @@ export const Navbar = () => {
             </a>
           ))}
           <Button size="sm" asChild>
-            <a href="/resume.pdf" download>
+             <a href="MasudReza-CV.pdf" download target="_blank" rel="noopener noreferrer">
               Download CV
             </a>
           </Button>
@@ -78,7 +78,7 @@ export const Navbar = () => {
               </a>
             ))}
             <Button size="sm" asChild className="w-full">
-              <a href="/resume.pdf" download>
+              <a href="MasudReza-CV.pdf" download target="_blank" rel="noopener noreferrer">
                 Download CV
               </a>
             </Button>

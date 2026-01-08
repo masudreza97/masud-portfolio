@@ -84,7 +84,7 @@ export const ContactSection = () => {
                 Prefer to have my full resume? Download it below!
               </p>
               <Button size="lg" asChild className="gap-2">
-                <a href="/resume.pdf" download>
+                 <a href="MasudReza-CV.pdf" download target="_blank" rel="noopener noreferrer">
                   <Download size={20} />
                   Download Resume
                 </a>

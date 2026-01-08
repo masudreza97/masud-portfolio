@@ -56,7 +56,7 @@ export const HeroSection = () => {
 
           <div className="flex flex-wrap items-center justify-center gap-4 animate-fade-in">
             <Button size="lg" asChild className="gap-2">
-              <a href="/resume.pdf" download>
+               <a href="MasudReza-CV.pdf" download target="_blank" rel="noopener noreferrer">
                 <Download size={20} />
                 Download Resume
               </a>
